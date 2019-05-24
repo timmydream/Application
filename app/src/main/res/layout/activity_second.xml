@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+    <Button
+        android:id="@+id/dlina"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:onClick="dlina"
+        android:text="Длина"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/massa"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:onClick="massa"
+        android:text="Масса"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/volume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/area"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:onClick="area"
+        android:text="Площадь"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dlina" />
+
+    <Button
+        android:id="@+id/volume"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:onClick="volume"
+        android:text="Объем"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massa" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="serif-monospace"
+        android:text="Конвертер"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
